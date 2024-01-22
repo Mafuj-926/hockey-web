@@ -17,7 +17,7 @@
 </head>
 <body class=".font-manrope">
     <header class="container mx-auto">
-        <nav>
+        <nav class="mt-12">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -25,11 +25,14 @@
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Item 1</a></li>
-                      <li><a>Item 3</a></li>
+                        <li><a class="text-[#FF4240]">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                  <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 font-normal text-gray-600 gap-11">
@@ -41,11 +44,41 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                    <img class="mr-6" src="Images/Frame.svg" alt="">
-                  <a class="btn">Button</a>
+                    <img class="hidden lg:block mr-6" src="Images/Frame.svg" alt="">
+                  <a class="btn bg-[#FF4240] text-white rounded-lg px-6 py-3 mr-6 lg:mr-0">Get Ticket</a>
                 </div>
               </div>
         </nav>
+        <!-- banner part -->
+        <div class="mt-7 lg:mt-12 relative">
+            <div class="carousel w-96 lg:w-full h-48 lg:h-auto m-6 lg:m-0">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+              </div>
+              <div class="bg-black rounded-lg p-8 w-96 m-6 lg:w-1/3 h-40 lg:absolute right-8 bottom-8">
+                <h3 class="lg:text-2xl font-extrabold text-white mb-1 lg:mb-4">Meet all the heroes from the field</h3>
+                <p class="text-gray-400">Meet our best players from over the world, Who are determind in every game. See their success.</p>
+              </div>
+        </div>
     </header>
     
 </body>
